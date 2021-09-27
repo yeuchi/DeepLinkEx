@@ -7,7 +7,7 @@ Then there is implicit deeplink for navigation within the scope of an activity. 
 Explicit deeplink deploys a notification and therefore have a global scope to reach all public activites.
 
 This project exercises code from below references. \
-Nothing new here.
+Nothing new nor original here.
 
 # References
 
