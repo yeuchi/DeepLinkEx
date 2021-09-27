@@ -6,6 +6,9 @@ There is applink that conforms to a web URL. \
 Then there is implicit deeplink for navigation within the scope of an activity. \
 Explicit deeplink deploys a notification and therefore have a global scope to reach all public activites.
 
+This project exercises code from below references. \
+Nothing new here.
+
 # References
 
 1. "Supporting both implicit and explicit deep linking with Navigation Component" - StackOverflow \
