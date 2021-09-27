@@ -1,6 +1,6 @@
 # DeepLinkEx
 
-Deeplink is an overloaded topic in Android. \
+Deeplink is an overloaded term in Android. \
 There is deeplink for launch an application to land on a specific page. \
 There is applink that conforms to a web URL. \
 Then there is implicit deeplink for navigation within the scope of an activity. \
