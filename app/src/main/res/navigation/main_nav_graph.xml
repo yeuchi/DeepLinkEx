@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ctyeung.deeplinkex.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_firstMainFragment"
+            app:destination="@id/firstMainFragment" />
+        <deepLink
+            android:id="@+id/deepLinkMain"
+            android:autoVerify="true"
+            app:uri="my-app://com.ctyeung.deeplinkex/mainFragment"
+            app:action="android.intent.action.MY_ACTION"
+            app:mimeType="type/subtype"/>
+    </fragment>
+    <fragment
+        android:id="@+id/firstMainFragment"
+        android:name="com.ctyeung.deeplinkex.FirstMainFragment"
+        android:label="fragment_first_main"
+        tools:layout="@layout/fragment_first_main" >
+        <action
+            android:id="@+id/action_firstMainFragment_to_secondMainFragment"
+            app:destination="@id/secondMainFragment" />
+        <deepLink
+            android:id="@+id/deepLinkFirst"
+            android:autoVerify="true"
+            app:uri="my-app://com.ctyeung.deeplinkex/firstMainFragment"
+            app:action="android.intent.action.MY_ACTION"
+            app:mimeType="type/subtype"/>
+    </fragment>
+    <fragment
+        android:id="@+id/secondMainFragment"
+        android:name="com.ctyeung.deeplinkex.SecondMainFragment"
+        android:label="fragment_second_main"
+        tools:layout="@layout/fragment_second_main" >
+        <deepLink app:uri="my-app://com.ctyeung.deeplinkex/secondMainFragment"
+            app:action="android.intent.action.MY_ACTION"
+            app:mimeType="type/subtype"/>
+    </fragment>
+</navigation>
